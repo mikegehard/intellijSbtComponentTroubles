@@ -7,4 +7,5 @@ lazy val root =
    .aggregate(contests)
 
 lazy val contests = project.
+    in( file("apps/contests") ).
     settings(commonSettings: _*)
