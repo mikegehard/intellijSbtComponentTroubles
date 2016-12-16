@@ -8,4 +8,9 @@ lazy val root =
 
 lazy val contests = project.
     in( file("apps/contests") ).
+    dependsOn(counter).
+    settings(commonSettings: _*)
+
+lazy val counter = project.
+    in( file("components/counter") ).
     settings(commonSettings: _*)
