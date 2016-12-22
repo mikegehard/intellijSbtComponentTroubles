@@ -1,7 +1,8 @@
-import com.google.inject.AbstractModule
 import java.time.Clock
 
-import services.{ApplicationTimer, AtomicCounter, Counter}
+import com.google.inject.AbstractModule
+import services.ApplicationTimer
+import foo.services.{Counter, AtomicCounter}
 
 /**
  * This class is a Guice module that tells Guice how to bind several
